@@ -1,15 +1,6 @@
-# QuickStart. Google Cloud Speech-to-Text API with Python
-## Check sample rate of audio (measured in Hz)
-You must know sample rate of your audio files like 8000 Hz, 16000 Hz, etc.<br>
-In Ubuntu OS just click right button on your audio file and select `Properties-->Audio-->Sample rate`. See image below:
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-![file_properties.png](img/file_properties.png "File properties")
-
-Example: 8000 Hz sample rate of audio on image above.
-
-## Transcribe local audio file (1 minut max)
-See [local.py](comprehend.py) file or code below:
-```
 import io
 
 from google.cloud import speech_v1p1beta1 as speech
@@ -43,6 +34,3 @@ for i, result in enumerate(response.results):
     print('-' * 20)
     print('First alternative of result {}'.format(i))
     print('Transcript: {}'.format(alternative.transcript))
-```
-
-## Transcribe audio file from Google Storage (longer that 1 minute)
