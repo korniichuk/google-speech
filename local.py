@@ -10,7 +10,9 @@ speech_file = 'example.mp3'
 # speech-to-text/docs/reference/rest/v1beta1/RecognitionConfig
 encoding=speech.enums.RecognitionConfig.AudioEncoding.AMR
 sample_rate_hertz=8000
-language_code='en-US' # https://cloud.google.com/speech-to-text/docs/languages
+# Language: https://cloud.google.com/
+# speech-to-text/docs/languages
+language_code='en-US'
 
 client = speech.SpeechClient()
 with io.open(speech_file, 'rb') as audio_file:
