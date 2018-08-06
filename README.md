@@ -8,7 +8,7 @@ In Ubuntu OS just click right button on your audio file and select `Properties--
 Example: 8000 Hz sample rate of audio on image above.
 
 ## Transcribe local audio file (1 minut max)
-See [local.py](comprehend.py) file or code below:
+See [local.py](local.py) file or code below:
 ```
 import io
 
